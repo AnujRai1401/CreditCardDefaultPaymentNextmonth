@@ -9,7 +9,7 @@ import pickle
 import sklearn
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
-
+import bz2
 st.set_page_config(
     page_title="Credit Card Default Payment For Next Month Prediction Home",
     page_icon="🏠",
