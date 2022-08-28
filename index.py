@@ -115,8 +115,9 @@ if choose == "Home":
 
     inputs=np.array([[LIMIT_BAL,_SEX,_EDUCATION,_MARRIAGE,AGE,PAY_0,PAY_2,PAY_3,BILL_AMT1,BILL_AMT2,BILL_AMT3,PAY_AMT1,PAY_AMT2,PAY_AMT3]])
 
-    with open ('RF1.pkl','rb') as f:
-         model=pickle.load(f)
+    R_pickle = bz2.BZ2File('RF1.pkl', 'rb')
+    model = pickle.load(R_pickle)
+
 
     prediction = model.predict(inputs)  
     if prediction==0:
