@@ -115,7 +115,7 @@ if choose == "Home":
 
     inputs=np.array([[LIMIT_BAL,_SEX,_EDUCATION,_MARRIAGE,AGE,PAY_0,PAY_2,PAY_3,BILL_AMT1,BILL_AMT2,BILL_AMT3,PAY_AMT1,PAY_AMT2,PAY_AMT3]])
 
-    with open ('RF1.pickle','rb') as f:
+    with open ('RF1.pkl','rb') as f:
          model=pickle.load(f)
 
     prediction = model.predict(inputs)  
